@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>control statement - all programs.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #0000FF; font-weight: bold; }
+.cpp1-symbol { color: #FF0000; font-weight: bold; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 15pt Consolas;"><span class="cpp1-comment">// Name: Sumama Rahim
+// Reg# F24BSCS-039
+// Dated: 10292024
+//
+// Assignment # 1
+//
+// Problem 1: Write a program in C++ to check the number is positive, negative or zero: 
+//	Using: Single If, Multiple if/s, Nested If, if-else, else-if etc
+
+/* TOPICS: Selectional Logic
+		Conditional (covered in this lecture)
+		i. If/s and their types
+		ii. switch statements
+		
+		unconditional
+		i. goto
+*/
+
+// Program start
+</span><span class="cpp1-preprocessor">#include &lt;iostream&gt;
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> std</span><span class="cpp1-symbol">;
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">// Start of Single If
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** Single If ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> single_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	take input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter a number to check it -ve, +ve, or ZERO: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">single_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// condition
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">single_if_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The given number is Negative&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">/*
+	OutPut:
+		let suppose number is &gt;=0 then prints nothing else prints only the {if body message}
+	*/
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">/*
+	Testing:
+		Tested with negative, positive and zero, And this program working but not meet 
+		required solution.
+
+	NOTE:
+		We are restricted to use only one if, SO
+		to do so we are not probably able to meet the required program out criteria.
+	 */
+</span><span class="cpp1-space">	 
+	</span><span class="cpp1-comment">// End of Single If Program
+</span><span class="cpp1-space">	
+
+
+	</span><span class="cpp1-comment">//	Start of Multiple If/s
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** Multiple If(s) ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	Var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> multiple_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	taking input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter a number to check it is negative, positive or ZERO: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">multiple_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// checking condition
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> multiple_if_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is NEGATIVE &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> multiple_if_num </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is POSITIVE &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> multiple_if_num </span><span class="cpp1-symbol">==</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is ZERO &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	
+	</span><span class="cpp1-comment">/*
+	OutPut:
+		let suppose number is &lt;0 then prints NEGATIVE
+		=0 then ZERO
+		and
+		&gt;0 then POSITIVE
+	*/
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">/*
+	Testing:
+		Tested with negative, positive and zero, And this program working and meet 
+		required solution. There is issue, if we press non number key it prints the last IF section		
+
+	NOTE:
+		We are restricted to use multiple if/s, SO
+		to do so we are probably able to meet the required program out criteria but with 
+		checking for zero we need to add one extra assignment operator to make it equal with the\
+		data type as well.
+	 */
+</span><span class="cpp1-space">	 
+	</span><span class="cpp1-comment">// End of Multiple If/s Program
+
+
+
+//	Start of Nested If
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** Nested If(s) ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> nested_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	taking input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter a number: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">nested_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	checking the condition
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> nested_if_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">|</span><span class="cpp1-space"> nested_if_num </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-space"> </span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">nested_if_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is NEGATIVE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">nested_if_num </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is POSITVE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">nested_if_num </span><span class="cpp1-symbol">==</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">			cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is ZERO&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;The entered number is ZERO - Outside&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	
+	
+	</span><span class="cpp1-comment">/*
+	OutPut:
+		let suppose number is &lt;0 then prints NEGATIVE
+		=0 then ZERO
+		and
+		&gt;0 then POSITIVE
+	*/
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">/*
+	Testing:
+		Tested with negative, positive and zero, And this program working and meet 
+		required solution. There is a problem at ZERO it is not showing the inside the 
+		nested last if
+
+	NOTE:
+		We are restricted to use Nested if, SO
+		to do so we are probably able to meet the required program out criteria but with 
+		checking for zero we need to add one extra assignment operator to make it equal with the\
+		data type as well.
+	 */
+</span><span class="cpp1-space">	 
+	</span><span class="cpp1-comment">// End of Nested If Program
+</span><span class="cpp1-space">	
+	
+	
+		</span><span class="cpp1-comment">//	Start of If-else
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** If-Else ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> if_else_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// taking input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter a number: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">if_else_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> if_else_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is NEGATIVE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">if_else_num </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is POSITVIE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is ZERO&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+		
+	</span><span class="cpp1-comment">/*
+	OutPut:
+		let suppose number is &lt;0 then prints NEGATIVE AND ZERO both
+		=0 then ZERO
+		and
+		&gt;0 then POSITIVE
+	*/
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">/*
+	Testing:
+		Tested with negative, positive and zero, And this program working and meet 
+		required solution. But there is a problem here, if we enter NEGATIVE number it executes
+		first IF and ELSE part.
+
+	NOTE:
+		We are restricted to use Nested if, SO
+		to do so we are probably able to meet the required program out criteria but with 
+		checking for zero we need to add one extra assignment operator to make it equal with the\
+		data type as well. 
+	 */
+</span><span class="cpp1-space">	 
+	</span><span class="cpp1-comment">// End of Nested If Program
+</span><span class="cpp1-space">	
+	
+	
+	
+	</span><span class="cpp1-comment">//	Start of Else-if
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** Else If (or Elf in short) ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> else_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	taking input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter a number: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">else_if_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	checking the conditions
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> else_if_num </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is NEGATIVE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> else_if_num </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is POSITIVE&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-space"> else_if_num </span><span class="cpp1-symbol">==</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Number is ZERO&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Invalid Input&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	End of Else-if 
+
+</span><span class="cpp1-space">	
+	
+	</span><span class="cpp1-comment">//	start of switch statement
+</span><span class="cpp1-space">	
+	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n\t**** Switch Statment ****\n&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">//	var declaration
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> switch_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// taking input
+</span><span class="cpp1-space">	cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Enter 0, 1, or -1: &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">switch_num</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-comment">// checking the input number
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">switch</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">switch_num</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">case</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">:
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Zero&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">break</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">case</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">:
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Positive One&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">break</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">case</span><span class="cpp1-space"> </span><span class="cpp1-symbol">-</span><span class="cpp1-number">1</span><span class="cpp1-symbol">:
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Negative One&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">break</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">default</span><span class="cpp1-symbol">:
+</span><span class="cpp1-space">		cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;You entered other number&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+	
+	</span><span class="cpp1-comment">/**
+				****	The End		****
+		
+		
+	*/
+
+
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}
+</span></span>
+</code></pre>
+</body>
+</html>
