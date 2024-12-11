@@ -1,0 +1,79 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	// practicing the Quiz that was held on 12/11/2024 at VC Office Ground
+	
+	// problem: Write a program to find maximum and minimum number in 1 D array by using for loop
+
+	// SOLUTION
+	
+	int a[6] = {2, 6, 0, 23, 9, 21};
+	int num = a[0];
+	
+	// right solution
+	// maximum number
+	for (int i = 0; i <= 5; i++)
+	{
+		if (a[i] > num)
+		{
+			num = a[i];
+		}
+	}
+	cout<<num<<" is maximum number"<<endl;
+	
+	
+	// minimum number
+	for (int i = 0; i <= 5; i++)
+	{
+		if (a[i] < num)
+		{
+			num = a[i];
+		}
+	}
+	cout<<num<<" is the minimum number in this array"<<endl;
+
+	// my first solution - What I was trying to get right solution
+//	// just checking purpose but this is not the actual solution	
+//	// maximum number
+//	for (int i = 0; i <= 5; i++)
+//	{
+//		if (a[i] == 23)
+//		cout<<a[i]<<" is maximum number"<<endl;
+//	}
+//	
+//	// minimum number
+//	for (int i = 0; i <= 5; i++)
+//	{
+//		if (a[i] == 0)
+//		{
+//			cout<<a[i]<<" is minimum number"<<endl;
+//		}
+//	 }
+	
+
+////	// What I submitted as a solution
+////	// maximum number
+////	for (int i = 0; i <= 5; i++)
+////	{
+////		if (num > a[i])
+////		{
+////		cout<<num<<" is maximum number"<<endl;
+////		}
+////	}
+////	
+////	// minimum number
+////	for (int i = 0; i <= 5; i++)
+////	{
+////		if (num < a[i])
+////		{
+////			cout<<num<<" is the minimum number in this array"<<endl;
+////		}
+////	}
+////	
+
+
+	return 0;
+}
