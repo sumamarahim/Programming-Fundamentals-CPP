@@ -1,3 +1,14 @@
+/**
+Name: Sumama Rahim
+Reg# F24BSCS-039
+Program: BS CS Morning Section A - Semester 1
+Department: IET (Information Engineering Technology)
+Instructor: Ms. Huma Israr
+Subject: Programming Fundamentals - CSC-101
+Date: 10/09/2024 (at EET-1)
+
+**/
+
 #include <iostream>
 
 using namespace std;
