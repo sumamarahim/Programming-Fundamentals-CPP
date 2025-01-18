@@ -1,0 +1,4 @@
+Name    Salary  Department
+Ali     35000   Sales
+Ahmad   49000   HR
+Taha    55000   Management
